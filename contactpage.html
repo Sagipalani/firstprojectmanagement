@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             height: 900px;
+            background-color: #f4f4f9;
+        }
+        .block{
+            display: flex;
+            flex-direction: row;
+            background: #ddd2d2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 95%;
+            height: 700px;
+        }
+        .tagline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #ddd2d2; 
+            width: 50%; 
+            font-size: 40px;
+            padding: 40px; 
+            margin: 40px 300px 20px 40px;
+            text-align: center; 
+       }
+        .contact-form {
+            background: #eeeaea;
+            padding: 20px;
+            margin-top: 80px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 20%;
+            height: 450px;
+        }
+        
+        .contact-form h2 {
+            margin-bottom: 15px;
+            font-size: 25px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom:20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-group button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">    
+        <div class="tagline">
+            <h2>"Bringing ideas to life</h2>
+            <h3>starts with a conversation</h3>
+            <h4>let’s make it happen"</h4>
+        </div>
+     <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
